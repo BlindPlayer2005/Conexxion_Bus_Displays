@@ -1,8 +1,10 @@
-# Conexxion Bus Displays  
+# Conexxion Bus Displays 
+
+## Contact
+
+Discord: [PixelRoute](https://discord.gg/cfKRkrfVkN)
 
 ## Findings on the AMELI FY7000 Controller and VDL LED Displays  
-
----
 
 ## 1. Introduction  
 This document summarizes research and testing on the **AMELI FY7000 controller** and the **VDL LED matrix bus displays**.  
