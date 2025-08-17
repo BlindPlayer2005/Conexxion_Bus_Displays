@@ -17,7 +17,7 @@ The goal of this research was to understand the hardware, communication protocol
 - Type: FY7000  
 - Function: Main controller for handling input (driver console, GPS, timetable system) and sending data to displays.  
 - Connectors:  
-    - Power input: *Black + red* (24 V DC nominal)  
+    - Power input: *Black(-) + red(+)*  
     - Data bus input (from pc/main controls): RS232 IBIS protocol *white + brown* (to be confirmed)
     - Data bus output (to display): RS485 *white + black* (to be tested and confirmed)
 - Power requirements:
@@ -34,7 +34,7 @@ The goal of this research was to understand the hardware, communication protocol
     - LDL1280/150(rightside): (unknown for now)
 - Connectors:  
     - Power input: *Blue + Brown, where Blue is - and brown is +* 
-    - Data in: RS485 *white + black* (bus communication, daisy chain capable), this will be connected to the FY7000 controller    
+    - Data in: RS485 *white + black* (bus communication, daisy chain capable), this will be connected to the FY7000 controller.    
 - Power requirements:  
     - Voltage: 24 V DC  
     - Current draw: ~4 A per display (measured at full operation)  
@@ -47,40 +47,40 @@ The goal of this research was to understand the hardware, communication protocol
 
 When starting up, press "OK" to exit the no destination code message.
 
-![](images\IMG20250817172108.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172116.jpg?raw=true)
 
 navigate to the wrench in the lower left corner, press "OK". 
 
-![](images\IMG20250817172116.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172124.jpg?raw=true)
 
 and fill in the password
 The password is as following: DOWN, RIGHT, DOWN, RIGHT,DOWN, RIGHT, DOWN, OK
 
-![](images\IMG20250817172130.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172130.jpg?raw=true)
 
 You will be presented with the next screen if the password is filled in correctly
 
-![](images\IMG20250817172141.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172141.jpg?raw=true)
 
 ### 3.2 check protocols
 
 When in the maintenance screen, check the communication protocols
 scroll down to factory setup
 
-![](images\IMG20250817172147.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172147.jpg?raw=true)
 
 Press "OK", and go to "Host"
 
-![](images\IMG20250817172153.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172153.jpg?raw=true)
 
 Press "OK", and go to "protocol"
 
-![](images\IMG20250817172200.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172200.jpg?raw=true)
 
 Press "OK", If the screen says "IBIS(3)" you have a working unit that can accept data from outside
 If the screen says something like "None" you wont be able to send data to the control unit to display custom strings (text).
 
-![](images\IMG20250817172208.jpg)
+![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172208.jpg?raw=true)
 
 ### 3.2 testing screens
 
