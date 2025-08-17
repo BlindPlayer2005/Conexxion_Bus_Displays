@@ -47,38 +47,40 @@ The goal of this research was to understand the hardware, communication protocol
 
 When starting up, press "OK" to exit the no destination code message.
 
-![Startup screen](images\IMG20250817172108.jpg "Title")
+![](images\IMG20250817172108.jpg)
 
 navigate to the wrench in the lower left corner, press "OK". 
 
-![Nav screen](images\IMG20250817172116.jpg "Title")
+![](images\IMG20250817172116.jpg)
 
 and fill in the password
 The password is as following: DOWN, RIGHT, DOWN, RIGHT,DOWN, RIGHT, DOWN, OK
 
-![Password screen](images\IMG20250817172130.jpg "Title")
+![](images\IMG20250817172130.jpg)
 
 You will be presented with the next screen if the password is filled in correctly
 
-![factory setup screen 1](images\IMG20250817172141.jpg "Title")
+![](images\IMG20250817172141.jpg)
 
 ### 3.2 check protocols
 
 When in the maintenance screen, check the communication protocols
 scroll down to factory setup
 
-![maintenance screen](images\IMG20250817172147.jpg "Title")
+![](images\IMG20250817172147.jpg)
 
 Press "OK", and go to "Host"
 
-![factory setup screen 2](images\IMG20250817172153.jpg "Title")
+![](images\IMG20250817172153.jpg)
 
 Press "OK", and go to "protocol"
 
-![factory setup screen 2](images\IMG20250817172200.jpg "Title")
+![](images\IMG20250817172200.jpg)
 
 Press "OK", If the screen says "IBIS(3)" you have a working unit that can accept data from outside
 If the screen says something like "None" you wont be able to send data to the control unit to display custom strings (text).
+
+![](images\IMG20250817172208.jpg)
 
 ### 3.2 testing screens
 
