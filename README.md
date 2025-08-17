@@ -1,109 +1,125 @@
-# Conexxion_Bus_Displays
+# Conexxion Bus Displays  
+
+## Findings on the AMELI FY7000 Controller and VDL LED Displays  
 
 ---
 
-# Findings on AMELI FY7000 Controller and VDL LED Displays
-
-## 1. Introduction
-This document summarizes all research and test results related to the **AMELI FY7000 controller** and the **VDL LED matrix displays**.  
-The goal of this research was to understand the hardware, communication protocols, and practical possibilities for reusing these displays.
+## 1. Introduction  
+This document summarizes research and testing on the **AMELI FY7000 controller** and the **VDL LED matrix bus displays**.  
+The aim is to understand their hardware, communication protocols, and potential methods for reusing them outside the original bus environment.  
 
 ---
 
-## 2. Hardware Overview
+## 2. Hardware Overview  
 
-### 2.1 AMELI FY7000 Controller
-- Manufacturer: AMELI  
-- Type: FY7000  
-- Function: Main controller for handling input (driver console, GPS, timetable system) and sending data to displays.  
-- Connectors:  
-    - Power input: *Black(-) + red(+)*  
-    - Data bus input (from pc/main controls): RS232 IBIS protocol *white + brown* (to be confirmed)
-    - Data bus output (to display): RS485 *white + black* (to be tested and confirmed)
-- Power requirements:
-    - Voltage: 12V to 24V
-    - Current draw: ~500mA (to be tested and confirmed)
+### 2.1 AMELI FY7000 Controller  
+- **Manufacturer:** AMELI  
+- **Model:** FY7000  
+- **Function:** Serves as the main controller. It handles input from the driver console, GPS, and timetable system, then processes and forwards the data to the displays.  
 
-### 2.2 VDL LDL500/150-28(backside), LDL1650/250(frontside), LDL1280/150(rightside) Displays
-- Manufacturer: VDL  
-- Type: VDL LDL500/150-28, LDL1650/250, LDL1280/150    
-- Display type: LED matrix  
-- Resolution:
-    - LDL500/150-28(backside): W28 x H16
-    - LDL1650/250(frontside): (unknown for now)
-    - LDL1280/150(rightside): (unknown for now)
-- Connectors:  
-    - Power input: *Blue + Brown, where Blue is - and brown is +* 
-    - Data in: RS485 *white + black* (bus communication, daisy chain capable), this will be connected to the FY7000 controller.    
-- Power requirements:  
-    - Voltage: 24 V DC  
-    - Current draw: ~4 A per display (measured at full operation)  
+**Connectors**  
+- **Power Input:** Black = negative (–), Red = positive (+)  
+- **Data Bus Input (from PC/main system):** RS232, IBIS protocol (White + Brown) *(to be confirmed)*  
+- **Data Bus Output (to displays):** RS485 (White + Black) *(to be tested/confirmed)*  
+
+**Power Requirements**  
+- Voltage: 12–24 V DC  
+- Current draw: ~500 mA *(to be confirmed)*  
 
 ---
 
-## 3. Menu's, passwords, and general user inputs
+### 2.2 VDL LED Displays (LDL500/150-28, LDL1650/250, LDL1280/150)  
+- **Manufacturer:** VDL  
+- **Models:**  
+  - Rear: LDL500/150-28  
+  - Front: LDL1650/250  
+  - Right-side: LDL1280/150  
+- **Type:** LED matrix (amber LEDs)  
 
-### 3.1 Maintenance Password + checking protocol
+**Resolution**  
+- Rear LDL500/150-28: 28 × 16 pixels  
+- Front LDL1650/250: *unknown (to be confirmed)*  
+- Side LDL1280/150: *unknown (to be confirmed)*  
 
-When starting up, press "OK" to exit the no destination code message.
+**Connectors**  
+- **Power Input:** Blue = negative (–), Brown = positive (+)  
+- **Data Input:** RS485 (White + Black), daisy-chain capable, connected to the FY7000 controller  
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172116.jpg?raw=true)
+**Power Requirements**  
+- Voltage: 24 V DC  
+- Current draw: ~4 A per display (measured at full load)  
 
-navigate to the wrench in the lower left corner, press "OK". 
+---
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172124.jpg?raw=true)
+## 3. Menus, Passwords, and User Inputs  
 
-and fill in the password
-The password is as following: DOWN, RIGHT, DOWN, RIGHT,DOWN, RIGHT, DOWN, OK
+### 3.1 Maintenance Menu & Password  
+When powering on, the startup screen may display **“No destination code.”**  
+- Press **OK** to clear the message.  
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172130.jpg?raw=true)
+**Steps to access the maintenance menu:**  
+1. Navigate to the **wrench icon** in the bottom-left corner.  
+2. Press **OK**.  
 
-You will be presented with the next screen if the password is filled in correctly
+![Wrench Menu](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172116.jpg?raw=true)  
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172141.jpg?raw=true)
+3. Enter the password sequence using the keypad:  
+   **DOWN → RIGHT → DOWN → RIGHT → DOWN → RIGHT → DOWN → OK**  
 
-### 3.2 check protocols
+![Enter Password](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172124.jpg?raw=true)  
 
-When in the maintenance screen, check the communication protocols
-scroll down to factory setup
+If entered correctly, you will see the maintenance screen:  
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172147.jpg?raw=true)
+![Maintenance Screen](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172130.jpg?raw=true)  
 
-Press "OK", and go to "Host"
+Next screen after successful login:  
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172153.jpg?raw=true)
+![Next Screen](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172141.jpg?raw=true)  
 
-Press "OK", and go to "protocol"
+---
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172200.jpg?raw=true)
+### 3.2 Checking Protocols  
+Inside the maintenance menu:  
+1. Scroll down to **Factory Setup** and press **OK**.  
 
-Press "OK", If the screen says "IBIS(3)" you have a working unit that can accept data from outside
-If the screen says something like "None" you wont be able to send data to the control unit to display custom strings (text).
+![Factory Setup](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172147.jpg?raw=true)  
 
-![](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172208.jpg?raw=true)
+2. Select **Host** → **Protocol**.  
 
-### 3.2 testing screens
+![Host Menu](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172153.jpg?raw=true)  
 
-(under construction)
+3. Press **OK**. If the screen says **IBIS(3)** → the unit can accept external data.  
+   If it says **None** → the unit cannot receive custom text.  
 
-## 4. Custom text
+![Protocol Check](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172200.jpg?raw=true)  
 
-### 4.1 Ordering PCB
+Confirmation of a working unit:  
 
-For custom text you will need a custom PCB to be able to connect to your PC
+![Working Unit](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172208.jpg?raw=true)  
 
-Link: https://ibis-wandler.de/
-E-mail: info@ibis-wandler.de
+---
 
-you will only need a data send unit, not a data receive unit, as we do not have any data that will be send back to the control unit.
-This will cost you roughly 45 euro.
+### 3.3 Testing Screens  
+*(Under construction)*  
 
-*we are currently busy with engineering our own control units, but this will take a while*
+---
 
-### 4.2 Control software
+## 4. Custom Text  
 
-(under construction).
+### 4.1 Required Hardware (PCB)  
+To send custom text, a custom PCB is required to connect the control unit to a PC.  
 
-## 5. Custom control units
+- Supplier: [IBIS-Wandler.de](https://ibis-wandler.de/)  
+- Contact: info@ibis-wandler.de  
+- Cost: ~€45  
+- Requirement: Only a **data send unit** is needed (no receive unit), as no return data is transmitted.  
 
-(under construction).
+*Note: Development of our own control units is in progress, but will take some time.*  
+
+### 4.2 Control Software  
+*(Under construction)*  
+
+---
+
+## 5. Custom Control Units  
+*(Under construction)*  
