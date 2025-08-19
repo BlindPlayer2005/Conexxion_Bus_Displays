@@ -1,5 +1,7 @@
 # Conexxion Bus Displays 
 
+![FY7000](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/FY7000.png?raw=true)
+
 ## Contact
 
 Discord: [PixelRoute](https://discord.gg/cfKRkrfVkN)
