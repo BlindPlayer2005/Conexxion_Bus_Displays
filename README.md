@@ -51,7 +51,9 @@ The aim is to understand their hardware, communication protocols, and potential 
 
 **Power Requirements**  
 - Voltage: 24 V DC  
-- Current draw: ~4 A per display (measured at full load)  
+- Current draw: ~4 A per display (measured at full load)
+
+![DISPLAY](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/387_gorinchemstation.png?raw=true)
 
 ---
 
