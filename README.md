@@ -105,7 +105,11 @@ Confirmation of a working unit:
 
 ---
 
-### 3.3 Testing Screens  
+### 3.3 Testing Screens 
+
+#### 3.3.1 Wiring diagram (Stock controller)
+
+![WIRING](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/WIRING.png)
 *(Under construction)*  
 
 ---
@@ -118,7 +122,9 @@ To send custom text, a custom PCB is required to connect the control unit to a P
 - Supplier: [IBIS-Wandler.de](https://ibis-wandler.de/)  
 - Contact: info@ibis-wandler.de  
 - Cost: ~€45  
-- Requirement: Only a **data send unit** is needed (no receive unit), as no return data is transmitted.  
+- Requirement: Only a **data send unit** is needed (no receive unit), as no return data is transmitted.
+
+![WANDLER](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IBIS_wandler.png)
 
 *Note: Development of our own control units is in progress, but will take some time.*  
 
