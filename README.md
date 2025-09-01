@@ -96,8 +96,6 @@ Inside the maintenance menu:
 3. Press **OK**. If the screen says **IBIS(3)** → the unit can accept external data.  
    If it says **None** → the unit cannot receive custom text.  
 
-![Protocol Check](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172200.jpg?raw=true)  
-
 Confirmation of a working unit:  
 
 ![Working Unit](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172208.jpg?raw=true)  
