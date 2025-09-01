@@ -68,19 +68,16 @@ When powering on, the startup screen may display **“No destination code.”**
 2. Press **OK**.  
 
 ![Wrench Menu](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172116.jpg?raw=true)  
+![Enter Password](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172124.jpg?raw=true)
 
 3. Enter the password sequence using the keypad:  
    **DOWN → RIGHT → DOWN → RIGHT → DOWN → RIGHT → DOWN → OK**  
 
-![Enter Password](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172124.jpg?raw=true)  
+![Maintenance Screen](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172130.jpg?raw=true)
 
 If entered correctly, you will see the maintenance screen:  
 
-![Maintenance Screen](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172130.jpg?raw=true)  
-
-Next screen after successful login:  
-
-![Next Screen](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172141.jpg?raw=true)  
+![Next Screen](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172141.jpg?raw=true)    
 
 ---
 
@@ -92,7 +89,9 @@ Inside the maintenance menu:
 
 2. Select **Host** → **Protocol**.  
 
-![Host Menu](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172153.jpg?raw=true)  
+![Host Menu](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172153.jpg?raw=true)
+
+![Protocol Check](https://github.com/BlindPlayer2005/Conexxion_Bus_Displays/blob/main/images/IMG20250817172200.jpg?raw=true)
 
 3. Press **OK**. If the screen says **IBIS(3)** → the unit can accept external data.  
    If it says **None** → the unit cannot receive custom text.  
